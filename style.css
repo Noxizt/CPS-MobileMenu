@@ -1,0 +1,232 @@
+/* ------------------------------------------- FONTS */
+@font-face {
+    font-family: "TTLakes";
+    font-weight: 400;
+    font-style: normal;
+    src: url(fonts/TTLakes-Regular.woff) format("woff"), url(fonts/TTLakes-Regular.ttf) format("truetype"), url(fonts/TTLakes-Medium.woff) format("woff"), url(fonts/TTLakes-Medium.ttf) format("truetype"), url(fonts/TTLakes-Bold.woff) format("woff"), url(fonts/TTLakes-Bold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: "TTLakes-Medium";
+    src: url(fonts/TTLakes-Medium.woff) format("woff"), url(fonts/TTLakes-Medium.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: "TTLakes-Bold";
+    src: url(fonts/TTLakes-Bold.woff) format("woff"), url(fonts/TTLakes-Bold.ttf) format("truetype")
+}
+
+html, body {
+    font-family: "TTLakes";
+    color: #1b1c21;
+}
+
+
+
+.button-round {
+    border: transparent;
+    background-color: transparent;
+}
+.button-round:hover {
+    outline: 1px solid lightpink;
+    background-color: #F8F8F8;
+}
+
+
+
+.logo-CPS {
+    content: url("res/logo-CPS.svg");
+    position: absolute;
+    top: 17.73px;
+    left: 79.73px;
+}
+
+
+.logo-CPS:hover {
+    outline: 1px solid lightpink;
+    background-color: #F8F8F8;
+}
+
+.icon-cross {
+    background-image: url("res/cross.svg");
+    width: 40px;
+    height: 40px;
+}
+
+.icon-search {
+    background-image: url("res/search.svg");
+    width: 40px;
+    height: 40px;
+}
+
+.icon-call {
+    background-image: url("res/call.svg");
+    width: 40px;
+    height: 40px;
+}
+
+.icon-chat {
+    background-image: url("res/chat.svg");
+    width: 40px;
+    height: 40px;
+}
+
+.icon-profile {
+    background-image: url("res/profile.svg");
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.page-container {
+    width: 768px;
+    height: 1024px;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu {
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFF;
+    box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02), 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
+    
+}
+
+/* ------------------------------------------- MOBILE MENU (HEADER) */
+
+.mobile-menu__header {
+    padding: 23px 24px 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------------------------------------- MOBILE MENU (NAVIGATION MENU) */
+.mobile-menu__nav {
+    margin: 0;
+    padding: 4px 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style-type: none;
+    position: absolute;
+    top: 116px;
+}
+
+.mobile-menu__nav__line {
+
+}
+
+.mobile-menu__nav__line__current::before {
+    content: url(res/highlight.svg);
+    position: absolute;
+    top: -0.5px;
+    left: 0px;
+}
+
+.mobile-menu__nav__link {
+    color: #1B1C21;
+    font-family: "TTLakes-Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px; 
+    text-decoration: none;
+}
+
+.mobile-menu__nav__link:hover {
+    border-radius: 6px;
+    background: #B8FFEC;
+}
+
+.mobile-menu__nav__link:hover::before {
+    
+}
+
+/* ------------------------------------------- MOBILE MENU (FOOTER) */
+.mobile-menu__footer {
+    padding: 0 0 32px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu__footer__btns{
+    display: flex;
+    gap: 16px;
+}
+
+.mobile-menu__footer__mail{
+    color: #1B1C21;
+    font-family: "TTLakes-Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    padding-top: 16px;
+}
+.mobile-menu__footer__mail:hover {
+    color: #FF3E79;
+    font-size: 2em;
+}
+
+.mobile-menu__footer__tel{
+    color: #1B1C21;
+    font-family: "TTLakes-Bold";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */   
+    letter-spacing: -0.6px;
+    text-decoration: none;
+    padding-top: 12px;
+}
+.mobile-menu__footer__tel:hover {
+    color: #FF3E79;
+    font-size: 2em;
+}
+
+.mobile-menu__footer__lang {
+    margin: 40px 0 0 0;
+    padding: 0;
+    height: 24px;
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+.mobile-menu__footer__lang__link{
+    padding: 0;
+    margin: 0;
+    color: #1B1C21;
+    font-family: "TTLakes-Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.mobile-menu__footer__lang__link:hover {
+    color: #FF3E79;
+    font-size: 2em;
+}
+
+.current  {
+    color: #7E7E82;
+}
+
+
