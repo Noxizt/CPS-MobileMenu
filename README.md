@@ -1,1 +1,1 @@
-https://noxizt.github.io/CPS-MobileMenu/
+https://noxizt.github.io/CPS-sidebar/
