@@ -1,1 +1,1 @@
-https://noxizt.github.io/CPS-sidebar/
+[sidebar of CPS Service site](https://noxizt.github.io/CPS-sidebar/)
