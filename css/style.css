@@ -1,0 +1,184 @@
+/* ------------------------------------------- sidebar <aside> */
+.sidebar {
+    width: 320px;
+    height: 100%;
+    min-height: 770px; /* предотвращает наложение footer на menu*/
+    margin-bottom: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #FFF;
+    box-shadow: -2px 0px 4px 0px rgba(69, 79, 126, 0.02), 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
+    
+    box-shadow: 5px 0 30px 0 #1b1c215f; */
+}
+
+/* ------------------------------------------- sidebar__header <header> */
+.sidebar__header {
+    height: 86px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------------------------------------- sidebar__menu <nav ul> */
+.sidebar__menu {
+    padding: 34px 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.sidebar__menu__line {
+}
+
+.sidebar__menu__link {
+    padding: 16px 0;
+    color: #1B1C21;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px; 
+}
+
+.sidebar__menu__link:hover {
+    color: #7E7E82;
+}
+
+.sidebar__menu__link:focus {
+    color: #7E7E82;
+}
+
+.sidebar__menu__link:focus::before {
+    content: url(../img/highlight.svg);
+    position: absolute;
+    left: 0;
+    margin-top: -5px;
+}
+
+/* ------------------------------------------- sidebar__footer <footer>*/
+.sidebar__footer {
+    padding: 0 0 32px 24px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+}
+
+.sidebar__footer__buttons{
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.sidebar__footer__mail{
+    margin-bottom: 12px;
+    color: #1B1C21;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    text-decoration: none;
+}
+
+.sidebar__footer__mail:hover {
+    transition: 1s;
+    font-size: 2em; 
+    color: #FF3E79;
+}
+
+.sidebar__footer__tel{
+    margin-bottom: 40px;
+    color: #1B1C21;
+    font-family: "TT Lakes";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */   
+    letter-spacing: -0.6px;
+    text-decoration: none;
+}
+
+.sidebar__footer__lang {
+    height: 24px;
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.sidebar__footer__lang__link{
+    color: #1B1C21;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.sidebar__footer__lang__link:focus {
+    color: #7E7E82;
+}
+
+/* ------------------------------------------- LOGO, BUTTONS, ICONS & ANIMATION*/
+.logo-CPS {
+    height: 51px;
+    position: absolute;
+    left: 79.73px;
+    transition: 1s;
+}
+
+.logo-CPS:hover {
+    scale: 1.25; /* transform: scale(125%); */
+}
+
+.round-button {
+    width: 40px;
+    height: 40px;
+    border: transparent;
+    background-color: transparent;
+    transition: 1s;
+}
+
+.round-button:hover {
+    scale: 1.1; /* transform: scale(110%); */
+    opacity: 0.5;
+}
+
+.icon-cross {
+    background-image: url("../img/cross.svg");
+}
+
+.icon-search {
+    background-image: url("../img/search.svg");
+}
+
+.icon-call {
+    background-image: url("../img/call.svg");
+}
+
+.icon-chat {
+    background-image: url("../img/chat.svg");
+}
+
+.icon-profile {
+    background-image: url("../img/profile.svg");
+}
+
+.animation-pulse{
+transition: 1s;
+}
+
+.animation-pulse:hover {
+    transition: 1s;
+    font-size: 2em;
+    color: #FF3E79;
+}

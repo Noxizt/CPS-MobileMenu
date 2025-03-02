@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="res/logo-CPS.svg" type="image/x-icon">
-    <title>CPS Серсвисный Центр</title>
+    <link rel="shortcut icon" href="img/logo-CPS.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/global.css">         <!-- global style -->
+    <link rel="stylesheet" href="css/style.css">          <!-- custom style -->
+    <link rel="stylesheet" href="fonts/stylesheet.css">   <!-- fonts -->
+    <title>Sidebar</title>
 </head>
 
-<body class="page-container">
+<body>
     <header></header>
     <!-- ------------------------------------------- MOBILE MENU -->
-    <aside class="mobile-menu">
+    <aside class="sidebar">
         
-        <div class="mobile-menu__header side-bar--mg">
-            <button class="button-round icon-cross" title="Закрыть"></button>
-            <a class="logo-CPS" href="#"></a>
-            <button class="button-round icon-search" title="Поиск"></button>
+        <div class="sidebar__header side-bar--mg">
+            <button class="round-button icon-cross" title="Закрыть"></button>
+            <!-- <a class="logo-CPS" href="#"></a> -->
+            <a class="logo-CPS" href="#"><img src="img/logo-CPS.svg"></a>
+            <button class="round-button icon-search" title="Поиск"></button>
         </div>
-
         <nav>
-            <ul class="mobile-menu__nav side-bar-link--mg">
-                <li class="mobile-menu__nav__line__current"><a class="mobile-menu__nav__link current" href="#repair">Ремонт техники</a></li>
-                <li class="mobile-menu__nav__line"><a class="mobile-menu__nav__link" href="#services">Услуги и сервисы</a></li>
-                <li class="mobile-menu__nav__line"><a class="mobile-menu__nav__link" href="#clients">Корпоративным клиентам</a></li>
-                <li class="mobile-menu__nav__line"><a class="mobile-menu__nav__link" href="#sellers">Продавцам техники</a></li>
-                <li class="mobile-menu__nav__line"><a class="mobile-menu__nav__link" href="#partners">Партнерам</a></li>
-                <li class="mobile-menu__nav__line"><a class="mobile-menu__nav__link" href="#manufacturers">Производителям</a></li>
-                <li class="mobile-menu__nav__line"><a class="mobile-menu__nav__link" href="#service-centers">Наши сервисные центры</a></li>
-                <li class="mobile-menu__nav__line"><a class="mobile-menu__nav__link" href="#contacts">Контакты</a></li>
+            <ul class="sidebar__menu">
+                <li class="sidebar__menu__line"><a class="sidebar__menu__link" href="#repair">Ремонт техники</a></li>
+                <li class="sidebar__menu__line"><a class="sidebar__menu__link" href="#services">Услуги и сервисы</a></li>
+                <li class="sidebar__menu__line"><a class="sidebar__menu__link" href="#clients">Корпоративным клиентам</a></li>
+                <li class="sidebar__menu__line"><a class="sidebar__menu__link" href="#sellers">Продавцам техники</a></li>
+                <li class="sidebar__menu__line"><a class="sidebar__menu__link" href="#partners">Партнерам</a></li>
+                <li class="sidebar__menu__line"><a class="sidebar__menu__link" href="#manufacturers">Производителям</a></li>
+                <li class="sidebar__menu__line"><a class="sidebar__menu__link" href="#service-centers">Наши сервисные центры</a></li>
+                <li class="sidebar__menu__line"><a class="sidebar__menu__link" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
-        
-        <div class="mobile-menu__footer">
-            <div class="mobile-menu__footer__btns">
-                <button class="button-round icon-call" title="Позвонить"></button>
-                <button class="button-round icon-chat" title="Написать"></button>
-                <button class="button-round icon-profile" title="Профиль"></button>
+        <footer class="sidebar__footer">
+            <div class="sidebar__footer__buttons">
+                <button class="round-button icon-call" title="Позвонить"></button>
+                <button class="round-button icon-chat" title="Написать"></button>
+                <button class="round-button icon-profile" title="Профиль"></button>
             </div>
-
-            <a class="mobile-menu__footer__mail" href="mailto:mail@cps.com">mail@cps.com</a>
-            <a class="mobile-menu__footer__tel" href="tel:88008908900">8 800 890 8900</a>
-
-            <div class="mobile-menu__footer__lang">
-                <button class="mobile-menu__footer__lang__link current" title="Переключи на русский язык">RU</button>
-                <button class="mobile-menu__footer__lang__link" title="Переключить на английский язык">EN</button>
-                <button class="mobile-menu__footer__lang__link" title="Переключить на китайский язык">CH</button>
+            <a class="sidebar__footer__mail animation-pulse" href="mailto:mail@cps.com">mail@cps.com</a>
+            <a class="sidebar__footer__tel animation-pulse" href="tel:88008908900">8 800 890 8900</a>
+            <div class="sidebar__footer__lang">
+                <button class="sidebar__footer__lang__link animation-pulse" title="Переключи на русский язык">RU</button>
+                <button class="sidebar__footer__lang__link animation-pulse" title="Переключить на английский язык">EN</button>
+                <button class="sidebar__footer__lang__link animation-pulse" title="Переключить на китайский язык">CH</button>
             </div>
-        </div>
+        </footer>
     </aside>
     <main></main>
 </body>
